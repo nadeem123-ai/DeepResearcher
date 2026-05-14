@@ -23,8 +23,10 @@ from utils.retry      import retry
 from langchain_ollama       import ChatOllama
 from langchain_core.prompts import PromptTemplate
 
+from langchain_groq import ChatGroq
+from config.settings import GROQ_API_KEY
 log  = get_logger(__name__)
-_llm = ChatOllama(model=MODEL, temperature=0)
+_llm = ChatGroq(model=MODEL, groq_api_key=GROQ_API_KEY, temperature=0) # type: ignore
 
 REQUIRED_SECTIONS = [
     "Executive Summary",

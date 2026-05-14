@@ -20,11 +20,12 @@ from graph.state      import ResearchState
 from utils.logger     import get_logger
 from utils.retry      import retry
 
-from langchain_ollama       import ChatOllama
+from langchain_groq import ChatGroq
+from config.settings import GROQ_API_KEY
 from langchain_core.prompts import PromptTemplate
 
 log  = get_logger(__name__)
-_llm = ChatOllama(model=MODEL, temperature=0)
+_llm = ChatGroq(model=MODEL, groq_api_key=GROQ_API_KEY, temperature=0) # pyright: ignore[reportCallIssue]
 
 _PROMPT = PromptTemplate.from_template("""
 You are a research planner. Decompose the topic into exactly 5 specific,
