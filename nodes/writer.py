@@ -20,7 +20,6 @@ from graph.state      import ResearchState
 from utils.logger     import get_logger
 from utils.retry      import retry
 
-from langchain_ollama       import ChatOllama
 from langchain_core.prompts import PromptTemplate
 
 from langchain_groq import ChatGroq
