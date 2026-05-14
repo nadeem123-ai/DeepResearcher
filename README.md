@@ -14,13 +14,6 @@
   Enter any topic → get a professional PDF research report in minutes. 100% free to run.
 </p>
 
-<p align="center">
-  🚀 <a href="YOUR_STREAMLIT_LIVE_LINK_HERE"><b>Try it Live — Free Demo</b></a> &nbsp;|&nbsp;
-  ⭐ <a href="https://github.com/nadeem123-ai/DeepResearcher">Star on GitHub</a>
-</p>
-
----
-
 ## 📌 What Is This?
 
 After building 6 projects with LangChain agents, I wanted to understand **LangGraph properly** — not the agent wrapper, but the actual `StateGraph` with nodes, edges, and shared state.
